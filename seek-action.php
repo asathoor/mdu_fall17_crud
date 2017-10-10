@@ -30,7 +30,7 @@ function search($what){
 				
 	} // ends word
 
-/* Fire the function off if the OK button has been pressed */
+/* Execute the function if the OK button has been pressed */
 if(isset($_GET['OK'])) {
 	search($_GET['seek']);
 }
