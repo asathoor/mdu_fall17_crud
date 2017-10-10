@@ -9,4 +9,4 @@
 	<input type="reset" name="reset" value="reset">
 </form>
 
-<?php include "header.php"; ?>
+<?php include "footer.php"; ?>

@@ -4,6 +4,8 @@ file: seek-action.php
 purpose: seek a work query
 by: petj
 */
+require_once "header.php";
+
 
 /* from input to  query */
 function search($what){
@@ -15,8 +17,10 @@ function search($what){
 		print "<h2>Searching: $what</h3>";
 		
 		/* SEARCH the sql */
-		$sql = "SELECT * FROM `hold` WHERE (`hold_navn` LIKE '%" . $what . "%')";
-		//echo $sql;
+		$sql = "SELECT * FROM `cars` WHERE (`car_model` LIKE '%" 
+		. $what 
+		. "%') ORDER BY `hold_navn` DESC";
+		echo $sql;
 		
 		/* mysqli query */
 		$result =  $mysqli->query($sql); // query
@@ -34,4 +38,6 @@ function search($what){
 if(isset($_GET['OK'])) {
 	search($_GET['seek']);
 }
+
+require_once "footer.php";
 ?>

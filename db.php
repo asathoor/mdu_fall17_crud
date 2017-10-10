@@ -6,7 +6,7 @@
 $host = "localhost";
 $password = "mojndo";
 $user = "root";
-$database = "fitness";
+$database = "dolly";
 
 // connect
 $mysqli = new mysqli( $host, $user, $password, $database ); // creates the object
@@ -22,6 +22,7 @@ else {
     . $mysqli->host_info 
     . "\n";
     */
+		echo ":-)";
 
 }
 ?>

@@ -1,7 +1,7 @@
 <?php
 /*
 file: deleteAction.php
-purpose: delete somebody in the Sakila database
+purpose: delete in the Dolly database ...
 */
 
 require_once 'header.php';
