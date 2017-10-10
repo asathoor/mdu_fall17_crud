@@ -16,7 +16,7 @@ function search($what){
 		
 		/* SEARCH the sql */
 		$sql = "SELECT * FROM `hold` WHERE (`hold_navn` LIKE '%" . $what . "%')";
-		echo $sql;
+		//echo $sql;
 		
 		/* mysqli query */
 		$result =  $mysqli->query($sql); // query
