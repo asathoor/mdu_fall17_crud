@@ -4,7 +4,7 @@ file: actors.php
 purpose: a list of actors from the sakila database
 */
 
-require_once 'boot_header.php'; // html header
+require_once 'header.php'; // html header
 require 'db.php'; // the mysqli object
 
 $sql = "SELECT * FROM `medlemmer`";
@@ -17,7 +17,7 @@ $result =  $mysqli->query($sql); // query
 <?php
 // looping out the result
 while($row = $result->fetch_assoc()){
-    echo "<article class='jumbotron'>" . $row['navn'] . "</article>\n";
+    echo "<div class='pink'>" . $row['navn'] . "</div> ";
    }
 
 mysqli_close($mysqli); 
