@@ -17,17 +17,18 @@ function search($what){
 		print "<h2>Searching: $what</h3>";
 		
 		/* SEARCH the sql */
-		$sql = "SELECT * FROM `cars` WHERE (`car_model` LIKE '%" 
+		$sql = "SELECT * FROM `medlemmer` WHERE (`navn` LIKE '%" 
 		. $what 
-		. "%') ORDER BY `hold_navn` DESC";
-		echo $sql;
+		. "%') ORDER BY `navn` DESC";
+
+		//echo $sql;
 		
 		/* mysqli query */
 		$result =  $mysqli->query($sql); // query
 
 		/* loop out the result */
 		while($row = $result->fetch_assoc()){
-   	 		echo $row['hold_navn'] . "<br>";
+   	 		echo $row['navn'] . "<br>";
    		}
    	
 	mysqli_close($mysqli); 
