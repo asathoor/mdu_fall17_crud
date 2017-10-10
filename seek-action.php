@@ -16,7 +16,7 @@ function search($what){
 		
 		/* SEARCH the sql */
 		$sql = "SELECT * FROM `hold` WHERE (`hold_navn` LIKE '%" . $what . "%')";
-		echo $sql;
+		//echo $sql;
 		
 		/* mysqli query */
 		$result =  $mysqli->query($sql); // query
@@ -30,7 +30,7 @@ function search($what){
 				
 	} // ends word
 
-/* Fire the function off if the OK button has been pressed */
+/* Execute the function if the OK button has been pressed */
 if(isset($_GET['OK'])) {
 	search($_GET['seek']);
 }
