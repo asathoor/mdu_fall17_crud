@@ -10,7 +10,7 @@ $database = "dolly";
 
 // connect
 $mysqli = new mysqli( $host, $user, $password, $database ); // creates the object
-$mysqli->set_charset("utf8");
+$mysqli->set_charset("utf8"); // danish & international chars
 
 // if error
 if ($mysqli->connect_errno) {
