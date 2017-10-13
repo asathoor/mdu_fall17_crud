@@ -1,7 +1,7 @@
 <?php
 /*
-file: actors.php
-purpose: a list of actors from the sakila database
+file: loop.php
+purpose: a list of whatever in  a table
 */
 
 require_once 'boot_header.php'; // html header
